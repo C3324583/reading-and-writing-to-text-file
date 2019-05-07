@@ -8,7 +8,7 @@ int main () {
    FILE * fp;
 
    fp = fopen ("file.txt", "w+");
-   fputs("We are in 2012", fp);
+   fprintf(fp, "We are in 2012");
    
    rewind(fp);
    fscanf(fp, "%s %s %s %d", str1, str2, str3, &year);
